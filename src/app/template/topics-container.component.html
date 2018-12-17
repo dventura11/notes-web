@@ -1,15 +1,14 @@
-Topics Container
-<div class="card-deck">
-  <topic-detail></topic-detail>
-  <topic-detail></topic-detail>
-  <topic-detail></topic-detail>
-  <topic-detail></topic-detail>
-  <topic-detail></topic-detail>
-  <topic-detail></topic-detail>
-  <topic-detail></topic-detail>
-  <topic-detail></topic-detail>
-  <topic-detail></topic-detail>
-  <topic-detail></topic-detail>
-  <topic-detail></topic-detail>
-  <topic-detail></topic-detail>
+<div class="container">
+  <div style="text-align:center">
+    <div class="card-columns">
+      <div *ngFor="let topic of topics" class="card mb-5">
+        <div class="card-body text-primary">
+          <img src="{{ topic.image }}" class="img-responsive img-circle" alt="{{topic.title}}">
+          <p class="font-weight-bold"> {{topic.title}}
+          <i class="fas fa-pen-square"></i></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+

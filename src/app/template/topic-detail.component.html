@@ -1,8 +1,39 @@
-<div class="card border-primary mb-3" style="max-width: 18rem;">
-  <div class="card-body text-primary">
-    <h6 class="card-title">
-      <img src="{{image}}" class="img-responsive img-circle" alt="{{title}}">{{title}}
-    </h6>
+<div class="bt">
+  <div class="bw">
+    <h1 class="display-3">{{topic.title}}</h1>
+    <p>{{topic.description}}</p>
   </div>
-  <div class="card-footer">editar</div>
 </div>
+<div class="container">
+  <div class="bw docs-content">
+    <h1 id="contents">Contents</h1>
+    <ul id="markdown-toc" style="">
+      <li class="nav-item"><a href="#contents" id="markdown-toc-contents" class="nav-link">Contents</a></li>
+      <li *ngFor="let subTopic of subTopics" class="nav-item">
+        <a href="#{{subTopic.id}}" id="markdown-toc-{{subTopic.id}}" class="nav-link">{{subTopic.title}}</a>
+      </li>
+    </ul>
+    <div *ngFor="let subTopic of subTopics">
+      <h1 id="{{subTopic.id}}">{{subTopic.title}}</h1>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+      <p>{{subTopic.html}}</p>
+    </div>
+  </div>
+</div>
+<a class="docs-top" style="display: block;" href="#">Back to top</a>
